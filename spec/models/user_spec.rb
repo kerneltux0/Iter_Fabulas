@@ -25,8 +25,8 @@ RSpec.describe User, :type => :model do
 
   it 'has many stories' do
     user = User.create(username:'username', password:'password')
-    story1 = Story.create(title:'something cool', location:'somewhere awesome', content:'this is what happened', likes:0)
-    story2 = Story.create(title:'this was ok', location:'nowhere special', content:'I think this was boring', likes:0)
+    story1 = Story.create(title:'something cool', location:'somewhere awesome', content:'this is what happened', likes:0, user_id:user.id)
+    story2 = Story.create(title:'this was ok', location:'nowhere special', content:'I think this was boring', likes:0, user_id:user.id)
     user.stories << story1
     user.stories << story2
     expect(user.stories.last).to eq(story2)
@@ -34,7 +34,7 @@ RSpec.describe User, :type => :model do
 
   it 'has many comments through stories' do
     user = User.create(username:'username', password:'password')
-    story = Story.create(title:'something something', location:'somewhere', content:'this is what happened', likes:0)
+    story = Story.create(title:'something something', location:'somewhere', content:'this is what happened', likes:0, user_id:user.id)
     user.stories << story
     user.story_id = story.id
     user.save
