@@ -23,14 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: iter-fabulas-api_development
-  user: ryan
-  password: '123456789'
+  database: Iter_Fabulas_development
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: iter-fabulas-api
+  #username: Iter_Fabulas
 
   # The password associated with the postgres role (username).
   #password:
@@ -58,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: iter-fabulas-api_test
+  database: Iter_Fabulas_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: iter-fabulas-api_production
-  username: iter-fabulas-api
-  password: <%= ENV['ITER-FABULAS-API_DATABASE_PASSWORD'] %>
+  database: Iter_Fabulas_production
+  username: Iter_Fabulas
+  password: <%= ENV['ITER_FABULAS_DATABASE_PASSWORD'] %>
