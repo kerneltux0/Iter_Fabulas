@@ -9,18 +9,18 @@ RSpec.describe User, :type => :model do
 
   it 'is not valid without a password' do
     user = User.create(username: 'username')
-    expect(user).not_to_be_valid
+    expect(user).not_to be_valid
   end
 
   it 'is not valid without a username' do
     user = User.create(password: 'password')
-    expect(user).not_to_be_valid
+    expect(user).not_to be_valid
   end
 
   it 'is valid with a unique username' do
     user1 = User.create(username: 'username1', password:'password')
     user2 = User.create(username: 'username1', password: 'something')
-    expect(user2).not_to_be_valid
+    expect(user2).not_to be_valid
   end
 
   it 'has many stories' do
