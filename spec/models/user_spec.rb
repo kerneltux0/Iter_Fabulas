@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
+RSpec.describe User, :type => :model do
   
   it 'is valid with username & password' do
     user = User.create(username: 'username', password: 'password')
@@ -16,4 +16,21 @@ RSpec.describe User, type: :model do
     user = User.create(password: 'password')
     expect(user).not_to_be_valid
   end
+
+  it 'is valid with a unique username' do
+    user1 = User.create(username: 'username1', password:'password')
+    user2 = User.create(username: 'username1', password: 'something')
+    expect(user2).not_to_be_valid
+  end
+
+  it 'has many stories' do
+    user = User.create(username:'username', password:'password')
+    story1 = Story.create(title:'something cool', location:'somewhere awesome', content:'this is what happened', likes:0, comments:[])
+    story2 = Story.create(title:'this was ok', location:'nowhere special', content:'I think this was boring', likes:0, comments:[])
+    user.stories << story1
+    user.stories << story2
+    expect(user.stories.last).to eq(story2)
+  end
+
+
 end
