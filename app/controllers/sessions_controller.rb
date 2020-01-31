@@ -38,4 +38,10 @@ class SessionsController < ApplicationController
     }
   end
 
+  private
+
+  def sessions_params
+    params.require(:user).permit(:username,:password)
+  end
+
 end
