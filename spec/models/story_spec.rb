@@ -28,10 +28,10 @@ RSpec.describe Story, :type => :model do
 
   it 'has many comments' do
     story = Story.create(title:'something', location:'somewhere', content:'this is what happened', likes:0)
-    comment1 = story.build_comment(content:'that is great', story_id:story.id)
+    comment1 = Comment.create(content:'that is great')
     story.comments << comment1
     story.save
-    comment2 = story.build_comment(content:'whatever, you liar', story_id:story.id)
+    comment2 = Comment.create(content:'whatever, you liar')
     story.comments << comment2
     story.save
     expect(story.comments.last).to eq(comment2)

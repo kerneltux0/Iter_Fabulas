@@ -7,7 +7,7 @@ RSpec.describe Comment, :type => :model do
     story = Story.create(title:'something', location:'somewhere', content:'something happened', likes:0)
     user.stories << story
     user.save
-    comment = story.build_comment(story_id:story.id)
+    comment = Comment.create()
     story.comments << comment
     story.save
     expect(comment).not_to be_valid
@@ -18,7 +18,7 @@ RSpec.describe Comment, :type => :model do
     story = Story.create(title:'something', location:'somewhere', content:'something happened', likes:0)
     user.stories << story
     user.save
-    comment = story.build_comment(content:'that is great', story_id:story.id)
+    comment = Comment.create(content:'that is great')
     story.comments << comment
     story.save
     expect(story.comments.last).to eq(comment)
