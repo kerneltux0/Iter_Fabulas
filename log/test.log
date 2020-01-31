@@ -4,3 +4,19 @@
   [1m[35m (294.4ms)[0m  [1m[35mCREATE DATABASE "iter-fabulas_test" ENCODING = 'unicode'[0m
   [1m[35m (113.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "iter-fabulas_test"[0m
   [1m[35m (268.2ms)[0m  [1m[35mCREATE DATABASE "iter-fabulas_test" ENCODING = 'unicode'[0m
+  [1m[35m (120.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "iter-fabulas_test"[0m
+  [1m[35m (285.5ms)[0m  [1m[35mCREATE DATABASE "iter-fabulas_test" ENCODING = 'unicode'[0m
+  [1m[35m (120.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "iter-fabulas_test"[0m
+  [1m[35m (290.7ms)[0m  [1m[35mCREATE DATABASE "iter-fabulas_test" ENCODING = 'unicode'[0m
+  [1m[35m (119.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "iter-fabulas_test"[0m
+  [1m[35m (286.0ms)[0m  [1m[35mCREATE DATABASE "iter-fabulas_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
