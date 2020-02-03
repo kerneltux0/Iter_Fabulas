@@ -7,14 +7,20 @@ class Signup extends Component {
     password_confirmation: ''
   }
 
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
   render(){
     return(
       <div>
         <form>
-          <input type='text' value={this.state.username} name='username' placeholder='username' />
-          <input type='password' value={this.state.password} name='password' placeholder='password' />
-          <input type='password' value={this.state.password_confirmation} name='password confirmation' placeholder='confirm password' />
-          <input type='submit' />
+          <input onChange={(event)=>this.handleChange(event)} type='text' value={this.state.username} name='username' placeholder='username' />
+          <input onChange={(event)=>this.handleChange(event)} type='password' value={this.state.password} name='password' placeholder='password' />
+          <input onChange={(event)=>this.handleChange(event)} type='password' name='password confirmation' placeholder='confirm password' />
+          <input type='submit' value='Create Account' />
         </form>
       </div>
     )
