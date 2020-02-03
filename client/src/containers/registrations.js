@@ -9,6 +9,7 @@ class Registrations extends Component {
         <button>
           <Link to='/signup'>Sign Up!</Link>  
         </button>
+        <br></br>
         <button>
           <Link to='/login'>Login!</Link>
         </button>

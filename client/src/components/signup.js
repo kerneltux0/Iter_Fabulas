@@ -25,7 +25,7 @@ class Signup extends Component {
       body: JSON.stringify(data)
     };
 
-    
+
   }
 
   handleSubmit(event) {
@@ -38,8 +38,11 @@ class Signup extends Component {
       <div>
         <form onSubmit={(event)=>this.handleSubmit(event)}>
           <input onChange={(event)=>this.handleChange(event)} type='text' value={this.state.username} name='username' placeholder='username' />
+          <br></br>
           <input onChange={(event)=>this.handleChange(event)} type='password' value={this.state.password} name='password' placeholder='password' />
+          <br></br>
           <input onChange={(event)=>this.handleChange(event)} type='password' name='password_confirmation' placeholder='confirm password' />
+          <br></br>
           <input type='submit' value='Create Account' />
         </form>
       </div>
