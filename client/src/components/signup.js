@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 class Signup extends Component {
   state = {
@@ -13,10 +14,14 @@ class Signup extends Component {
     })
   }
 
+  handleSubmit(event) {
+
+  }
+
   render(){
     return(
       <div>
-        <form>
+        <form onSubmit={(event)=>this.handleSubmit(event)}>
           <input onChange={(event)=>this.handleChange(event)} type='text' value={this.state.username} name='username' placeholder='username' />
           <input onChange={(event)=>this.handleChange(event)} type='password' value={this.state.password} name='password' placeholder='password' />
           <input onChange={(event)=>this.handleChange(event)} type='password' name='password confirmation' placeholder='confirm password' />
@@ -27,4 +32,10 @@ class Signup extends Component {
   }
 }
 
-export default Signup
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addUser: (user) => dispatch({type: 'ADD_USER', user})
+  }
+}
+
+export default connect(null,mapDispatchToProps)(Signup);
