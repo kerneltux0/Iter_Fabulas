@@ -15,6 +15,16 @@ class Signup extends Component {
   }
 
   submitCredentials(data) {
+    const url = 'http://localhost:3001/users'
+    const configObj = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(data)
+    };
+
     
   }
 
