@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
+
 
 class Signup extends Component {
   state = {
@@ -32,10 +32,4 @@ class Signup extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    addUser: (user) => dispatch({type: 'ADD_USER', user})
-  }
-}
-
-export default connect(null,mapDispatchToProps)(Signup);
+export default Signup;
