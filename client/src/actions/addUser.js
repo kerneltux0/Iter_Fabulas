@@ -1,3 +1,5 @@
+import {push} from 'react-router-redux';
+
 export function addUser(url,config) {
   return(dispatch) => {
     dispatch({type: 'LOADING_USER_ADD'})
@@ -9,6 +11,7 @@ export function addUser(url,config) {
         dispatch({type: 'CREATION_ERROR', responseJSON})
       }else{
         dispatch({type: 'CREATE_USER', responseJSON})
+        dispatch(push('/home'))
       }
   
     })
