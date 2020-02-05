@@ -28,8 +28,6 @@ class Signup extends Component {
       body: JSON.stringify(data)
     };
     this.props.addUser(url,configObj)
-    
-
   }
 
   handleSubmit(event) {
