@@ -7,7 +7,12 @@ export function addUser(url,config) {
       return response.json()
     }).then(responseJSON => {
       console.log(responseJSON)
-      // dispatch({type: 'CREATE_USER'})
+      if(responseJSON.error){
+        dispatch({type: 'CREATION_ERROR', responseJSON})
+      }else{
+        dispatch({type: 'CREATE_USER', responseJSON})
+      }
+  
     })
   }
 }
