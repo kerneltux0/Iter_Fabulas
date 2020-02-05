@@ -26,13 +26,14 @@ class Signup extends Component {
       },
       body: JSON.stringify(data)
     };
-    return fetch(url,configObj)
-    .then(function(response){
-      response.json();
-    })
-    .then(function(object){
-      console.log(object)
-    })
+    this.props.addUser(url,configObj)
+    // return fetch(url,configObj)
+    // .then(function(response){
+    //   response.json();
+    // })
+    // .then(function(object){
+    //   console.log(object)
+    // })
 
   }
 
@@ -58,4 +59,10 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+const mapDispatchToProps = (dispatch) => {
+  return{
+    addUser: () => dispatch(addUser())
+  }
+}
+
+export default connect(null,mapDispatchToProps)(Signup);
