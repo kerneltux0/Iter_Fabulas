@@ -8,9 +8,11 @@ export function addUser(url,config) {
       return response.json()
     }).then(responseJSON => {
       if(responseJSON.error){
+        console.log('action error:',responseJSON)
         dispatch({type: 'CREATION_ERROR', responseJSON})
       }else{
-        dispatch({type: 'CREATE_USER', responseJSON})
+        let user = responseJSON.user
+        dispatch({type: 'CREATE_USER', user})
         dispatch(push('/home'))
       }
   
