@@ -28,13 +28,7 @@ class Signup extends Component {
       body: JSON.stringify(data)
     };
     this.props.addUser(url,configObj)
-    // return fetch(url,configObj)
-    // .then(function(response){
-    //   response.json();
-    // })
-    // .then(function(object){
-    //   console.log(object)
-    // })
+    
 
   }
 
