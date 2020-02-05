@@ -48,6 +48,9 @@ class Signup extends Component {
           <br></br>
           <input type='submit' value='Create Account' />
         </form>
+        <div>
+          {this.state.error}
+        </div>
       </div>
     )
   }
