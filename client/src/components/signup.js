@@ -61,7 +61,7 @@ class Signup extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return{
-    addUser: () => dispatch(addUser())
+    addUser: (url,config) => dispatch(addUser(url,config))
   }
 }
 
