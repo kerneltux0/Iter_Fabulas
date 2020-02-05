@@ -20,6 +20,7 @@ class Signup extends Component {
     const url = 'http://localhost:3001/users'
     const configObj = {
       method: 'POST',
+      credentials: 'same-origin',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -38,6 +39,7 @@ class Signup extends Component {
   }
 
   handleSubmit(event) {
+    console.log('handle submit:',this.state)
     event.preventDefault()
     this.submitCredentials(this.state)
   }
