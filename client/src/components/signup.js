@@ -41,7 +41,7 @@ class Signup extends Component {
   handleSubmit(event) {
     console.log('handle submit:',this.state)
     event.preventDefault()
-    this.submitCredentials(this.state)
+    this.submitCredentials({user: this.state})
   }
 
   render(){
