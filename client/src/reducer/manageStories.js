@@ -1,4 +1,4 @@
-const manageStories = (state, action) => {
+const manageStories = (state = {user: {}, stories: [], loading: false}, action) => {
   return state
 }
 
