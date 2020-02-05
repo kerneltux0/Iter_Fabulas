@@ -1,4 +1,5 @@
 export function addUser(url,config) {
+  console.log('add user action:',config)
   return(dispatch) => {
     dispatch({type: 'LOADING_USER_ADD'})
     fetch(url,config)
