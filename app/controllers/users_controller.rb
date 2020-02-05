@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def create
+    pry
     @user = User.create(user_params)
     if @user.save
       login!
