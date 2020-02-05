@@ -15,7 +15,7 @@ const manageStories = (state = {user: {}, stories: [], loading: false, logged_in
       }
     case 'CREATION_ERROR':
       return{
-        message: action.error,
+        error: action.error,
         loading: false
       }
     default:
