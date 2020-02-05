@@ -31,7 +31,6 @@ class Signup extends Component {
   }
 
   handleSubmit(event) {
-    console.log('handle submit:',this.state)
     event.preventDefault()
     this.submitCredentials({user: this.state})
   }
