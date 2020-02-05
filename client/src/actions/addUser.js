@@ -1,3 +1,5 @@
-export function addUser() {
-  
+export function addUser(url,config) {
+  return(dispatch) => {
+
+  }
 }
