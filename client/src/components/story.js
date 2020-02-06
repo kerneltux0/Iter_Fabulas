@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Story = () => {
+class Story extends Component {
 
-  return(
-    <div>
-
-    </div>
-  )
+  render(){
+    return(
+      <div>
+        {console.log(this.props.location.state)}
+      </div>
+    )
+  }
 }
 
 export default Story
