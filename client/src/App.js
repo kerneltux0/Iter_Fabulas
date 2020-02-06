@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import Registrations from './containers/registrations';
-import Home from './containers/home';
-import Signup from './components/signup';
-import Login from './components/login';
+import StoriesContainer from './containers/storiesContainer';
 import {BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 
@@ -12,10 +9,7 @@ class App extends Component {
     return(
       <div>
         <BrowserRouter>
-          <Route exact path='/' component={Registrations} />
-          <Route exact path='/signup' component={Signup} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/home' component={Home} />
+          <Route exact path='/' component={StoriesContainer} />
         </BrowserRouter>
       </div>
     )
