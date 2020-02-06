@@ -6,4 +6,9 @@ class StoriesController < ApplicationController
       stories: @stories
     }
   end
+
+  def create
+    
+  end
+
 end
