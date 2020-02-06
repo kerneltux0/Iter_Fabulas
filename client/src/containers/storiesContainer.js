@@ -5,12 +5,23 @@ import {fetchStories} from '../actions/storiesActions';
 
 class StoriesContainer extends Component {
 
+  componentDidMount() {
+    this.props.fetchStories()
+  }
+
   render() {
     return(
       <div>
-        <Stories />
+        <Stories stories={this.props.stories} />
       </div>
     )
+  }
+}
+
+const mapStateToProps = (state) => {
+  return{
+    stories: state.stories,
+    loading: state.loading
   }
 }
 
