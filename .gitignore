@@ -10,9 +10,9 @@
 /test/version_tmp/
 /tmp/
 /client/node_modules/
-/log/
-/log/*
 *.log
+log/
+log/*.log
 
 # Used by dotenv library to load environment variables.
 # .env
