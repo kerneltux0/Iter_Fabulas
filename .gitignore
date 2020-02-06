@@ -11,6 +11,8 @@
 /tmp/
 /client/node_modules/
 /log/
+/log/*
+*.log
 
 # Used by dotenv library to load environment variables.
 # .env
