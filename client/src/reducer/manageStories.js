@@ -6,7 +6,7 @@ const manageStories = (state = {stories: [], comments: [], loading: false}, acti
         stories: [...state.stories],
         loading: true
       }
-    case 'ADDING_STORIES':
+    case 'ADD_STORIES':
       return{
         ...state,
         stories: action.stories,
