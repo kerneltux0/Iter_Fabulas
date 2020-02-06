@@ -14,4 +14,10 @@ class StoriesContainer extends Component {
   }
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return{
+    fetchStories: dispatch(fetchStories())
+  }
+}
+
 export default connect(mapStateToProps,mapDispatchToProps)(StoriesContainer);
