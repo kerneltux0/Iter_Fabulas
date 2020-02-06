@@ -12,7 +12,7 @@ class StoryInput extends Component {
           <br />
           <input type='text' name='location' value='state.location' placeholder='Story Location' />
           <br />
-          <textarea name='content' value='state.content' placeholder='Your Story'/>
+          <textarea rows={10} cols={30} name='content' value='state.content' placeholder='Your Story'/>
           <br />
           <input type='submit' value='Submit Your Story' />
         </form>
