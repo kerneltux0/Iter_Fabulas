@@ -27,7 +27,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return{
-    fetchStories: dispatch(fetchStories())
+    fetchStories: () => dispatch(fetchStories())
   }
 }
 
