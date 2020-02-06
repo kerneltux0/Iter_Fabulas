@@ -5,7 +5,7 @@ export const fetchStories = () => {
     .then(response =>{
       return response.json()
     }).then(responseJSON => {
-      dispatch({type: 'ADD_STORIES',stories: responseJSON.stories})
+      dispatch({type: 'FETCH_STORIES',stories: responseJSON.stories})
     })
   }
 }
