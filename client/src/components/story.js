@@ -5,7 +5,7 @@ class Story extends Component {
   render(){
     return(
       <div>
-        {console.log(this.props.location.state)}
+        
       </div>
     )
   }
