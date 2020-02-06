@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Story extends Component {
+const Story = (props) => {
+  console.log(props)
 
-  render(){
-    return(
-      <div>
-        
-      </div>
-    )
-  }
+  return(
+    <div>
+      <h1>
+        Story page
+      </h1>
+    </div>
+  )
 }
 
 export default Story
