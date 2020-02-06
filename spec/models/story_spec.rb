@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Story, :type => :model do
   
   it 'is not valid without a title' do
-    story = Story.create(location:'somewhere', content:'this is what happened', name:'jimmy' likes:0)
+    story = Story.create(location:'somewhere', content:'this is what happened', name:'jimmy', likes:0)
     expect(story).not_to be_valid
   end
 
