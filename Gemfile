@@ -25,7 +25,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'foreman'
 
@@ -43,6 +42,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'rspec-rails'
+  gem 'rspec'
   gem 'capybara'
   gem 'database_cleaner'
 end
