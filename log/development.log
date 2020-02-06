@@ -84,3 +84,41 @@ Migrating to CreateComments (20200206171356)
   [1m[36mStory Create (0.6ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Jimmy"], ["title", "A Monster Vacation"], ["location", "South Florida"], ["content", "Wildness ensued"], ["likes", 0]]
   [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2020-02-06 11:40:11 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ryan/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#index as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant StoriesController::Stories):
+  
+app/controllers/stories_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2020-02-06 11:40:42 -0700
+Processing by StoriesController#index as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant StoriesController::Stories):
+  
+app/controllers/stories_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2020-02-06 11:42:00 -0700
+Processing by StoriesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant StoriesController::Stories):
+  
+app/controllers/stories_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2020-02-06 11:45:22 -0700
+Processing by StoriesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant StoriesController::Stories):
+  
+app/controllers/stories_controller.rb:4:in `index'
