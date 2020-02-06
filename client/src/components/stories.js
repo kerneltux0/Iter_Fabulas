@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import StoryInput from './storyInput';
 class Stories extends Component {
 
   render(){
@@ -12,6 +12,9 @@ class Stories extends Component {
         <ul>
           {storyList}
         </ul>
+        <div>
+          <StoryInput />
+        </div>
       </div>
     )
   }
