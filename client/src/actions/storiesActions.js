@@ -26,7 +26,7 @@ export const addStory = (storyData) => {
     .then(response =>{
       return response.json()
     }).then(responseJSON =>{
-      // dispatch({type: 'CREATE_STORY',story: responseJSON.story})
+      dispatch({type: 'CREATE_STORY',story: responseJSON.story})
     })
   }
 }
