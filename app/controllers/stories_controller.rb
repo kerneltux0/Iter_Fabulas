@@ -8,8 +8,18 @@ class StoriesController < ApplicationController
   end
 
   def create
-    pry
-    
+    @story = Story.new(story_params)
+    if @story.save
+      render json: {
+        story: @story
+      }
+    end
+
   end
+
+  private
+    def story_params
+      params.require(:story).permit(:title,:name,:location,:content,:likes)
+    end
 
 end
