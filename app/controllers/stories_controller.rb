@@ -12,8 +12,4 @@ class StoriesController < ApplicationController
     
   end
 
-  def show
-    pry
-  end
-
 end
