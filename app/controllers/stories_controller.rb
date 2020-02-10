@@ -8,6 +8,7 @@ class StoriesController < ApplicationController
   end
 
   def create
+    pry
     
   end
 
