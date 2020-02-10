@@ -24,7 +24,7 @@ class Stories extends Component {
           {storyList}
         </ul>
         <div>
-          <StoryInput />
+          <StoryInput addStory={this.props.addStory}/>
         </div>
       </div>
     )

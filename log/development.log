@@ -1036,3 +1036,24 @@ Processing by StoriesController#index as */*
 Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-02-10 10:46:13 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-10 10:47:17 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-10 10:48:19 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+

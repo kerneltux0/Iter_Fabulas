@@ -12,7 +12,7 @@ class StoriesContainer extends Component {
   render() {
     return(
       <div>
-        <Stories stories={this.props.stories} />
+        <Stories stories={this.props.stories} addStory={this.props.addStory}/>
       </div>
     )
   }

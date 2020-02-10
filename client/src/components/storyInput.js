@@ -18,6 +18,7 @@ class StoryInput extends Component {
 
   handleSubmit(event){
     event.preventDefault()
+    this.props.addStory(this.state)
   }
 
   render(){
