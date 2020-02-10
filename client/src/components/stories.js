@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
 import StoryInput from './storyInput';
-import {Link, Route, Switch, BrowserRouter} from 'react-router-dom';
-import Story from './story';
+import {Link} from 'react-router-dom';
 
 
 class Stories extends Component {
 
   render(){
     const storyList = this.props.stories.map(story => {
-      return(<li><Link to={`/stories/${story.id}`}>{story.title}</Link></li>)
+      return(
+        <li>
+          <Link to={{
+            pathname: `/stories/${story.id}`,
+            story: {story}
+          }}>{story.title}</Link>
+        </li>
+      )
     })
 
     return(

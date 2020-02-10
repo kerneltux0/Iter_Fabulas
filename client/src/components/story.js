@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Story = (props) => {
-  console.log(props)
+  console.log(props.location.story)
 
   return(
     <div>
