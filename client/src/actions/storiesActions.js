@@ -10,9 +10,23 @@ export const fetchStories = () => {
   }
 }
 
-export const addStory = () => {
+export const addStory = (storyData) => {
+  const config = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify(storyData)
+  }
+
   return(dispatch) => {
     dispatch({type: 'ADDING_STORY'})
-    fetch('')
+    fetch('http://localhost:3001/stories',config)
+    .then(response =>{
+      return response.json()
+    }).then(responseJSON =>{
+      // dispatch({type: 'ADD_STORY',story: responseJSON.story})
+    })
   }
 }
