@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Stories from '../components/stories';
 import {connect} from 'react-redux';
-import {fetchStories} from '../actions/storiesActions';
+import {fetchStories, addStory} from '../actions/storiesActions';
 
 class StoriesContainer extends Component {
 
@@ -27,7 +27,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return{
-    fetchStories: () => dispatch(fetchStories())
+    fetchStories: () => dispatch(fetchStories()),
+    addStory: (story) => dispatch(addStory(story))
   }
 }
 

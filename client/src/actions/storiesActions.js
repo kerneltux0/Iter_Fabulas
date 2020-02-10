@@ -10,14 +10,9 @@ export const fetchStories = () => {
   }
 }
 
-export const fetchStory = (id) => {
+export const addStory = () => {
   return(dispatch) => {
-    dispatch({type: 'LOADING_STORIES'})
-    fetch(`http://localhost:3001/stories/${id}`)
-    .then(response => {
-      return response.json()
-    }).then(responseJSON => {
-      dispatch({type: 'FETCH_STORY',story: responseJSON.story})
-    })
+    dispatch({type: 'ADDING_STORY'})
+    fetch('')
   }
 }
