@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Stories from '../components/stories';
 import {connect} from 'react-redux';
 import {fetchStories} from '../actions/storiesActions';
+import Story from '../components/story'
+import {Route, Switch} from 'react-router-dom';
 
 class StoriesContainer extends Component {
 
@@ -12,6 +14,9 @@ class StoriesContainer extends Component {
   render() {
     return(
       <div>
+        <Switch>
+          <Route path={`/stories/:storyId`} component={Story} />
+        </Switch>
         <Stories stories={this.props.stories} />
       </div>
     )

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import StoryInput from './storyInput';
-import {Link, Route, BrowserRouter} from 'react-router-dom';
+import {Link, Route, Switch, BrowserRouter} from 'react-router-dom';
 import Story from './story';
 
 
@@ -20,7 +20,6 @@ class Stories extends Component {
         <div>
           <StoryInput />
         </div>
-        <Route path={`/stories/:storyId`} component={Story}/>
       </div>
     )
   }
