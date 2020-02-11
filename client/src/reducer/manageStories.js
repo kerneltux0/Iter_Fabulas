@@ -25,7 +25,7 @@ const manageStories = (state = {stories: [], comments: [], loading: false}, acti
         loading: false
       }
     case 'CREATE_STORY':
-      let story = {title: action.title, location: action.location, name: action.name, content: action.content, likes: action.likes}
+      let story = {id: action.story.id, title: action.story.title, location: action.story.location, name: action.story.name, content: action.story.content, likes: action.story.likes}
       return{
         ...state,
         stories: [...state.stories,story],
