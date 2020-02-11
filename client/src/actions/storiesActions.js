@@ -47,6 +47,7 @@ export const addLike = (storyId) => {
     .then(response => {
       return response.json()
     }).then(responseJSON => {
+      console.log(responseJSON)
       // dispatch action
     })
   }
