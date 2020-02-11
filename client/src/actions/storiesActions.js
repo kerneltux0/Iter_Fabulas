@@ -30,3 +30,10 @@ export const addStory = (storyData) => {
     })
   }
 }
+
+export const addLike = (storyId) => {
+  const config = {
+    
+  }
+
+}
