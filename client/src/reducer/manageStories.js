@@ -19,9 +19,10 @@ const manageStories = (state = {stories: [], comments: [], loading: false}, acti
         loading: true
       }
     case 'UPDATING_LIKES':
-      let storyLikes = state.stories.find(story => story.id===action.id)
+      let storyLikes = state.stories.find(story => story.id===action.story.id)
       return{
-        storyLikes,
+        ...state,
+        story: storyLikes,
         loading: false
       }
     case 'CREATE_STORY':
