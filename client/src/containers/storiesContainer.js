@@ -10,11 +10,15 @@ class StoriesContainer extends Component {
   }
 
   render() {
-    return(
-      <div>
-        <Stories stories={this.props.stories} addStory={this.props.addStory} addLike={this.props.addLike}/>
-      </div>
-    )
+    if(this.props.loading === true){
+      return(<h1>Loading...</h1>)
+    }else{
+      return(
+        <div>
+          <Stories stories={this.props.stories} loading={this.props.loading} addStory={this.props.addStory} addLike={this.props.addLike}/>
+        </div>
+      )
+    }
   }
 }
 
