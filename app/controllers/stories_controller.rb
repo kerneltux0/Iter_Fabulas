@@ -22,7 +22,7 @@ class StoriesController < ApplicationController
     @story.likes += 1
     @story.save
     render json: {
-      likes: @story.likes
+      story: @story
     }
   end
 
