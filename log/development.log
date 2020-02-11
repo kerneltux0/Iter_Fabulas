@@ -2244,3 +2244,714 @@ Processing by StoriesController#index as */*
 Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-02-11 10:54:47 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 10:55:05 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"blah blah blah", "name"=>"yadda yadda", "location"=>"somewhere", "content"=>"whatever", "likes"=>0, "story"=>{"name"=>"yadda yadda", "title"=>"blah blah blah", "location"=>"somewhere", "content"=>"whatever", "likes"=>0}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (7.2ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "yadda yadda"], ["title", "blah blah blah"], ["location", "somewhere"], ["content", "whatever"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 10:55:10 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 10:55:49 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 10:56:02 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"tnohuoaen", "name"=>"tnouhoetn", "location"=>"ntohueon", "content"=>"tnaoeuheonsa", "likes"=>0, "story"=>{"name"=>"tnouhoetn", "title"=>"tnohuoaen", "location"=>"ntohueon", "content"=>"tnaoeuheonsa", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.4ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "tnouhoetn"], ["title", "tnohuoaen"], ["location", "ntohueon"], ["content", "tnaoeuheonsa"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 10:56:39 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 10:59:01 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 10:59:22 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"something", "name"=>"blah blah", "location"=>"yadda yadda", "content"=>"notauheona", "likes"=>0, "story"=>{"name"=>"blah blah", "title"=>"something", "location"=>"yadda yadda", "content"=>"notauheona", "likes"=>0}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.4ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "blah blah"], ["title", "something"], ["location", "yadda yadda"], ["content", "notauheona"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 10:59:25 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:03:41 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:13 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.9ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (1.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:32 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:32 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:32 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:32 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:32 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:19:32 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:20:03 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:20:20 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:45:20 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 11:45:41 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"yadda yadda", "name"=>"whatever", "location"=>"somewhere", "content"=>"aonteuheonauhoensa", "likes"=>0, "story"=>{"name"=>"whatever", "title"=>"yadda yadda", "location"=>"somewhere", "content"=>"aonteuheonauhoensa", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.5ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "whatever"], ["title", "yadda yadda"], ["location", "somewhere"], ["content", "aonteuheonauhoensa"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:45:45 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 11:46:13 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:33:37 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:33:57 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 12:34:36 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"bla-bla-bla", "name"=>"tnoehuton", "location"=>"somewhere", "content"=>"onteuhoenuh", "likes"=>0, "story"=>{"name"=>"tnoehuton", "title"=>"bla-bla-bla", "location"=>"somewhere", "content"=>"onteuhoenuh", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.5ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "tnoehuton"], ["title", "bla-bla-bla"], ["location", "somewhere"], ["content", "onteuhoenuh"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:43:02 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 12:43:20 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"who cares", "name"=>"me", "location"=>"somewhere", "content"=>"ntoehuteon", "likes"=>0, "story"=>{"name"=>"me", "title"=>"who cares", "location"=>"somewhere", "content"=>"ntoehuteon", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.4ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "me"], ["title", "who cares"], ["location", "somewhere"], ["content", "ntoehuteon"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:44:21 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 12:44:39 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"123456", "name"=>"987654", "location"=>"nsoeuh", "content"=>"tonehunoesa", "likes"=>0, "story"=>{"name"=>"987654", "title"=>"123456", "location"=>"nsoeuh", "content"=>"tonehunoesa", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.4ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "987654"], ["title", "123456"], ["location", "nsoeuh"], ["content", "tonehunoesa"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:45:39 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 12:45:54 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"789456", "name"=>"321789", "location"=>"toneuh", "content"=>"cr.hbr,.c", "likes"=>0, "story"=>{"name"=>"321789", "title"=>"789456", "location"=>"toneuh", "content"=>"cr.hbr,.c", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.4ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "321789"], ["title", "789456"], ["location", "toneuh"], ["content", "cr.hbr,.c"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:46:24 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:47:06 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 12:52:25 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:05:29 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:05:42 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 13:06:03 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"something else", "name"=>"someone else", "location"=>"somewhere else", "content"=>"ntaoeuhoensa", "likes"=>0, "story"=>{"name"=>"someone else", "title"=>"something else", "location"=>"somewhere else", "content"=>"ntaoeuhoensa", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.5ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "someone else"], ["title", "something else"], ["location", "somewhere else"], ["content", "ntaoeuhoensa"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:07:14 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:07:19 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 13:07:36 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"578576", "name"=>"90895p3", "location"=>"tn,g.crubc.r", "content"=>"laoreg9rbjg,.cra", "likes"=>0, "story"=>{"name"=>"90895p3", "title"=>"578576", "location"=>"tn,g.crubc.r", "content"=>"laoreg9rbjg,.cra", "likes"=>0}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.3ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "90895p3"], ["title", "578576"], ["location", "tn,g.crubc.r"], ["content", "laoreg9rbjg,.cra"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:08:08 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:09:22 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 13:09:37 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"bucr.diu8p9ud", "name"=>"bkjc'9,.udrp.c", "location"=>"be9.ed,b'cr", "content"=>"xebgc,'edgc,.r", "likes"=>0, "story"=>{"name"=>"bkjc'9,.udrp.c", "title"=>"bucr.diu8p9ud", "location"=>"be9.ed,b'cr", "content"=>"xebgc,'edgc,.r", "likes"=>0}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.4ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "bkjc'9,.udrp.c"], ["title", "bucr.diu8p9ud"], ["location", "be9.ed,b'cr"], ["content", "xebgc,'edgc,.r"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:09:49 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-11 13:24:34 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-11 13:24:52 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"abcde", "name"=>".,cb.c,r", "location"=>"jbc,roubcro", "content"=>"ontejbc,r", "likes"=>0, "story"=>{"name"=>".,cb.c,r", "title"=>"abcde", "location"=>"jbc,roubcro", "content"=>"ontejbc,r", "likes"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (0.4ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content", "likes") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", ".,cb.c,r"], ["title", "abcde"], ["location", "jbc,roubcro"], ["content", "ontejbc,r"], ["likes", 0]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.0ms)
+
+
