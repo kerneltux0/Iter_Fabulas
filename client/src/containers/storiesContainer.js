@@ -33,7 +33,7 @@ const mapDispatchToProps = (dispatch) => {
   return{
     fetchStories: () => dispatch(fetchStories()),
     addStory: (story) => dispatch(addStory(story)),
-    addLike: (storyId) => dispatch(addLike(storyId))
+    addLike: (storyId,storyData) => dispatch(addLike(storyId,storyData))
   }
 }
 
