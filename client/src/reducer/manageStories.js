@@ -19,10 +19,12 @@ const manageStories = (state = {stories: [], comments: [], loading: false}, acti
         loading: true
       }
     case 'UPDATING_LIKES':
+      console.log('reducer state',state)
+      console.log('reducer action',action)
       let storyLikes = state.stories.find(story => story.id===action.story.id)
       return{
         ...state,
-        story: storyLikes,
+        storyLikes,
         loading: false
       }
     case 'CREATE_STORY':
