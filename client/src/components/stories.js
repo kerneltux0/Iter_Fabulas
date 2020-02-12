@@ -19,8 +19,7 @@ class Stories extends Component {
                 <li>
                   <Link to={{
                     pathname: `/stories/${story.id}`,
-                    story: story,
-                    addLike: this.props.addLike
+                    story: story
                   }}>{story.title}</Link>
                 </li>
               )
