@@ -31,14 +31,14 @@ export const addStory = (storyData) => {
   }
 }
 
-export const addLike = (storyId) => {
+export const addLike = (storyId,storyData) => {
   const config = {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
     },
-    body: JSON.stringify(storyId)
+    body: JSON.stringify(storyData)
   }
 
   return(dispatch) => {
