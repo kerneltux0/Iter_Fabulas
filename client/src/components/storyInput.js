@@ -6,13 +6,11 @@ class StoryInput extends Component {
     name: '',
     location: '',
     content:'',
-    likes: 0
   }
 
   handleChange(event) {
     this.setState({
-      [event.target.name]: event.target.value,
-      likes: 0
+      [event.target.name]: event.target.value
     })
   }
 

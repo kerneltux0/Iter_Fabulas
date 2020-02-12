@@ -17,15 +17,6 @@ class StoriesController < ApplicationController
 
   end
 
-  def update
-    @story = Story.find(params[:id])
-    @story.likes += 1
-    @story.save
-    render json: {
-      story: @story
-    }
-  end
-
   private
     def story_params
       params.require(:story).permit(:title,:name,:location,:content,:likes)

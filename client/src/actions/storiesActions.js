@@ -31,24 +31,3 @@ export const addStory = (storyData) => {
   }
 }
 
-export const addLike = (storyId,storyData) => {
-  const config = {
-    method: 'PATCH',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-    },
-    body: JSON.stringify(storyData)
-  }
-
-  return(dispatch) => {
-    dispatch({type: 'ADDING_LIKE'})
-    fetch(`http://localhost:3001/stories/${storyId}`,config)
-    .then(response => {
-      return response.json()
-    }).then(responseJSON => {
-      dispatch({type: 'UPDATING_LIKES',story: responseJSON.story})
-    })
-  }
-
-}
