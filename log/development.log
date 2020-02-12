@@ -3344,3 +3344,871 @@ Processing by StoriesController#index as */*
 Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:50:38 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/stories/6" for 127.0.0.1 at 2020-02-12 09:50:43 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>6, "id"=>"6", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.2ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 1], ["id", 6]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:50:48 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/stories/10" for 127.0.0.1 at 2020-02-12 09:50:54 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>10, "id"=>"10", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.2ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 10]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:50:56 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/3" for 127.0.0.1 at 2020-02-12 09:50:59 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>3, "id"=>"3", "story"=>{}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.2ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 3]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:05 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/3" for 127.0.0.1 at 2020-02-12 09:51:09 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>3, "id"=>"3", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 3]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:14 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/stories/2" for 127.0.0.1 at 2020-02-12 09:51:18 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>2, "id"=>"2", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 2]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:20 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/stories/2" for 127.0.0.1 at 2020-02-12 09:51:23 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>2, "id"=>"2", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.2ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 2]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:29 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/2" for 127.0.0.1 at 2020-02-12 09:51:35 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>2, "id"=>"2", "story"=>{}}
+  [1m[36mStory Load (0.1ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.2ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 4], ["id", 2]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:37 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:47 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:55 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/4" for 127.0.0.1 at 2020-02-12 09:51:58 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>4, "id"=>"4", "story"=>{}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 4]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:51:59 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/4" for 127.0.0.1 at 2020-02-12 09:52:02 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>4, "id"=>"4", "story"=>{}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 4]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:52:10 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:55:35 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/stories/1" for 127.0.0.1 at 2020-02-12 09:55:40 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>1, "id"=>"1", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.2ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 5], ["id", 1]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:55:49 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/1" for 127.0.0.1 at 2020-02-12 09:55:52 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>1, "id"=>"1", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 6], ["id", 1]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:56:25 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/stories/8" for 127.0.0.1 at 2020-02-12 09:56:34 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>8, "id"=>"8", "story"=>{}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 1], ["id", 8]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:56:39 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/8" for 127.0.0.1 at 2020-02-12 09:56:42 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>8, "id"=>"8", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 8]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:56:44 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/stories/8" for 127.0.0.1 at 2020-02-12 09:56:46 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>8, "id"=>"8", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.5ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 8]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:56:53 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:57:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/stories/14" for 127.0.0.1 at 2020-02-12 09:57:37 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>14, "id"=>"14", "story"=>{}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 1], ["id", 14]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:58:10 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:58:12 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:58:56 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/stories/16" for 127.0.0.1 at 2020-02-12 09:58:59 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>16, "id"=>"16", "story"=>{}}
+  [1m[36mStory Load (0.1ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 1], ["id", 16]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:59:09 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/stories/16" for 127.0.0.1 at 2020-02-12 09:59:12 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>16, "id"=>"16", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 16]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:59:17 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:59:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/17" for 127.0.0.1 at 2020-02-12 09:59:36 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>17, "id"=>"17", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 1], ["id", 17]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:59:41 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/17" for 127.0.0.1 at 2020-02-12 09:59:44 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>17, "id"=>"17", "story"=>{}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 17]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:59:46 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/stories/17" for 127.0.0.1 at 2020-02-12 09:59:49 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>17, "id"=>"17", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 17]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 09:59:53 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:00:51 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/6" for 127.0.0.1 at 2020-02-12 10:00:56 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>6, "id"=>"6", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.5ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 6]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:01:09 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:02:17 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/stories/5" for 127.0.0.1 at 2020-02-12 10:02:28 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>5, "id"=>"5", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 6], ["id", 5]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:02:32 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/stories/5" for 127.0.0.1 at 2020-02-12 10:02:34 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>5, "id"=>"5", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.5ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 7], ["id", 5]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:02:37 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/stories/5" for 127.0.0.1 at 2020-02-12 10:02:38 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>5, "id"=>"5", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 8], ["id", 5]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:02:57 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:04:46 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:05:14 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/11" for 127.0.0.1 at 2020-02-12 10:05:16 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>11, "id"=>"11", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.3ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 11]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:05:20 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/11" for 127.0.0.1 at 2020-02-12 10:05:22 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>11, "id"=>"11", "story"=>{}}
+  [1m[36mStory Load (0.1ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 11]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:05:24 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:05:55 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:06:10 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/12" for 127.0.0.1 at 2020-02-12 10:06:13 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>12, "id"=>"12", "story"=>{}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.5ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 12]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:06:24 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/stories/12" for 127.0.0.1 at 2020-02-12 10:06:28 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"_json"=>12, "id"=>"12", "story"=>{}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.2ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 12]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:06:33 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:07:50 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:08:15 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:09:19 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/13" for 127.0.0.1 at 2020-02-12 10:09:27 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"id"=>"13", "name"=>"321789", "title"=>"789456", "location"=>"toneuh", "content"=>"cr.hbr,.c", "likes"=>2, "story"=>{"id"=>"13", "name"=>"321789", "title"=>"789456", "location"=>"toneuh", "content"=>"cr.hbr,.c", "likes"=>2}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 3], ["id", 13]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:09:47 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/stories/19" for 127.0.0.1 at 2020-02-12 10:09:53 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"id"=>"19", "name"=>"xdf8py", "title"=>"0890878765", "location"=>"n/lrht90d8", "content"=>"rcdgi76ueyfj", "likes"=>0, "story"=>{"id"=>"19", "name"=>"xdf8py", "title"=>"0890878765", "location"=>"n/lrht90d8", "content"=>"rcdgi76ueyfj", "likes"=>0}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.7ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 1], ["id", 19]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:09:56 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/stories/19" for 127.0.0.1 at 2020-02-12 10:09:58 -0700
+Processing by StoriesController#update as JSON
+  Parameters: {"id"=>"19", "name"=>"xdf8py", "title"=>"0890878765", "location"=>"n/lrht90d8", "content"=>"rcdgi76ueyfj", "likes"=>1, "story"=>{"id"=>"19", "name"=>"xdf8py", "title"=>"0890878765", "location"=>"n/lrht90d8", "content"=>"rcdgi76ueyfj", "likes"=>1}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[36mStory Update (0.5ms)[0m  [1m[33mUPDATE "stories" SET "likes" = $1 WHERE "stories"."id" = $2[0m  [["likes", 2], ["id", 19]]
+  ↳ app/controllers/stories_controller.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:23
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:10:01 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:15:29 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:15:39 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:15:46 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:16:12 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:16:17 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:16:26 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:16:38 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:16:41 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:17:19 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:17:34 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:17:40 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:18:27 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:18:34 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 10:18:45 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+

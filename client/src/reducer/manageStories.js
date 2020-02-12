@@ -22,7 +22,7 @@ const manageStories = (state = {stories: [], comments: [], loading: false}, acti
       let storyLikes = state.stories.find(story => story.id===action.story.id)
       return{
         ...state,
-        stories: [...state.stories,storyLikes],
+        story: storyLikes,
         loading: false
       }
     case 'CREATE_STORY':
