@@ -4898,3 +4898,32 @@ Processing by StoriesController#index as */*
 Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms)
 
 
+  [1m[36mStory Destroy (5.7ms)[0m  [1m[31mDELETE FROM "stories"[0m
+Started GET "/" for 127.0.0.1 at 2020-02-12 13:57:16 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ryan/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 13ms (Views: 3.5ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/stories" for 127.0.0.1 at 2020-02-12 13:58:01 -0700
+Processing by StoriesController#create as JSON
+  Parameters: {"title"=>"Test Story", "name"=>"Test User", "location"=>"Test Location", "content"=>"something something", "story"=>{"name"=>"Test User", "title"=>"Test Story", "location"=>"Test Location", "content"=>"something something"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[36mStory Create (7.1ms)[0m  [1m[32mINSERT INTO "stories" ("name", "title", "location", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Test User"], ["title", "Test Story"], ["location", "Test Location"], ["content", "something something"]]
+  ↳ app/controllers/stories_controller.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:12
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-12 13:58:05 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
