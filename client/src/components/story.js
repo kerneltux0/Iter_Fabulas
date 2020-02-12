@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
+import {addLike} from '../actions/storiesActions';
+import {connect} from 'react-redux';
 
 class Story extends Component {
 
   handleLikes(storyId,storyData) {
-    this.props.location.addLike(storyId,storyData)
+    this.props.addLike(storyId,storyData)
   }
 
   render() {
@@ -31,4 +33,10 @@ class Story extends Component {
   
 }
 
-export default Story
+const mapDispatchToProps = (dispatch) => {
+  return{
+    addLike: (storyId,storyData) => dispatch(addLike(storyId,storyData))
+  }
+}
+
+export default connect(null,mapDispatchToProps)(Story);
