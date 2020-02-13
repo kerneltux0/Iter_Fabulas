@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Comments from '../components/comments';
 import CommentInput from '../components/commentInput';
 import {connect} from 'react-redux';
+import {addComment} from '../actions/storiesActions';
 
 class CommentsContainer extends Component {
 
