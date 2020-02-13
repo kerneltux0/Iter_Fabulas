@@ -31,6 +31,24 @@ export const addStory = (storyData) => {
   }
 }
 
-export const addComment = (id,comment) => {
+export const addComment = (storyId,comment) => {
+  const config = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify(comment)
+  }
+
+  return(dispatch) => {
+    dispatch({type: 'ADDING_COMMENT'})
+    fetch(`http://localhost:3001/stories/${storyId}/comments`,config)
+    .then(response => {
+      return response.json()
+    }).then(responseJSON => {
+      
+    })
+  }
 
 }
