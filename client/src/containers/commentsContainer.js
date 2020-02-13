@@ -17,7 +17,7 @@ class CommentsContainer extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return{
-    addComment: (id,comment) => dispatch(addComment(id,comment))
+    addComment: (storyId,comment) => dispatch(addComment(storyId,comment))
   }
 }
 
