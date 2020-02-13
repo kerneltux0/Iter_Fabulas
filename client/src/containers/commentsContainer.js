@@ -14,4 +14,10 @@ class CommentsContainer extends Component {
   }
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return{
+    addComment: () => dispatch(addComment())
+  }
+}
+
 export default CommentsContainer;
