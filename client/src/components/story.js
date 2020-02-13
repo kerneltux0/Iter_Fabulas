@@ -16,7 +16,7 @@ class Story extends Component {
         <h4>{story.location}</h4>
         <p>{story.content}</p>
         <div>
-          <CommentsContainer />
+          <CommentsContainer story={story}/>
         </div>
       </div>
     )
