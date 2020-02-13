@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import StoryInput from './storyInput';
 import {Link} from 'react-router-dom';
+import '../App.css'
 
 
 class Stories extends Component {
@@ -8,10 +9,12 @@ class Stories extends Component {
   render(){
 
     if(this.props.loading === true){
-      return(<h1>Loading...</h1>)
+      return(<div className="App">
+        <h1>Loading...</h1>
+      </div>)
     }else{
       return(
-        <div>
+        <div className="App">
           <h1>Stories appear here!</h1>
           <ul>
             {this.props.stories.map(story => {
