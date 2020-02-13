@@ -17,12 +17,18 @@ class StoryInput extends Component {
   handleSubmit(event){
     event.preventDefault()
     this.props.addStory(this.state)
+    this.setState({
+      title: '',
+      name: '',
+      location: '',
+      content: ''
+    })
   }
 
   render(){
     return(
       <div>
-        <form onSubmit={(event)=>this.handleSubmit(event)}>
+        <form className="story-form" onSubmit={(event)=>this.handleSubmit(event)}>
           <input onChange={(event)=>this.handleChange(event)} type='text' name='title' value={this.state.title} placeholder='Story Title' />
           <br />
           <input onChange={(event)=>this.handleChange(event)} type='text' name='name' value={this.state.name} placeholder='Your Name' />
