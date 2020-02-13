@@ -13,6 +13,10 @@ class CommentsController < ApplicationController
   end
 
   def index
+    @story = Story.find(params[:id])
+    render json: {
+      comments: @story.comments
+    }
 
   end
 
