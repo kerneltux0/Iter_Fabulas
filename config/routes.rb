@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get '/', to: 'stories#index'
   post '/stories', to: 'stories#create'
   get '/stories/:id/comments', to: 'comments#show'
-  post '/stories/:id/comments', to: 'comments#new'
+  post '/stories/:id/comments', to: 'comments#create'
 end
