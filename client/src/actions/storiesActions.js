@@ -60,7 +60,7 @@ export const fetchComments = (storyId) => {
     .then(response => {
       return response.json()
     }).then(responseJSON => {
-      console.log(responseJSON)
+      dispatch({type: 'FETCH_COMMENTS',comments: responseJSON.comments})
     })
   }
 }
