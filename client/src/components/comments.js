@@ -9,15 +9,18 @@ class Comments extends Component {
 
 
   render() {
-    const renderComments = this.props.comments.map(comment => {
-      return(<Comment comment={comment}/>)
-    })
-
-    return(
-      <div>
-        {renderComments}
-      </div>
-    )
+    
+    if(this.props.loading===true){
+      return(<h1>Loading...</h1>)
+    }else{
+      return(
+        <div>
+          {this.props.comments.map(comment => {
+            return(<Comment comment={comment} />)
+          })}
+        </div>
+      )
+    }
   }
 }
 
