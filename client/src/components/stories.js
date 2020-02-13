@@ -15,19 +15,18 @@ class Stories extends Component {
     }else{
       return(
         <div className="App">
-          <h1>Stories appear here!</h1>
-          <ul>
+          <h1>Our List of Stories</h1>
+          <div className="story-list">
             {this.props.stories.map(story => {
               return(
-                <li>
-                  <Link to={{
-                    pathname: `/stories/${story.id}`,
-                    story: story
-                  }}>{story.title}</Link>
-                </li>
+                <Link to={{
+                  pathname: `/stories/${story.id}`,
+                  story: story
+                }}>{story.title}
+                </Link>
               )
             })}
-          </ul>
+          </div>
           <div>
             <StoryInput addStory={this.props.addStory}/>
           </div>
