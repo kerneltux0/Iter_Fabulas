@@ -5204,3 +5204,205 @@ No template found for CommentsController#create, rendering head :no_content
 Completed 204 No Content in 19627ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:03:31 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:04:06 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"blah blah blah", "id"=>"24", "comment"=>{"content"=>"blah blah blah"}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:05:11 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:05:22 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"yadda yadda", "id"=>"24", "comment"=>{"content"=>"yadda yadda"}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):3
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ (pry):3
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 223345ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:09:33 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ryan/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 23ms (Views: 8.2ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:09:49 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"yadda yadda", "id"=>"24", "comment"=>{"content"=>"yadda yadda"}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 16ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:10:37 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 14ms (Views: 6.3ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:10:48 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"who cares", "id"=>"24", "comment"=>{"content"=>"who cares"}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:11:43 -0700
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:11:53 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"whatever", "id"=>"24", "comment"=>{"content"=>"whatever"}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:13:40 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ryan/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 18ms (Views: 6.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:13:54 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"something something", "id"=>"24", "comment"=>{"content"=>"something something"}}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 15ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:14:35 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ryan/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 22ms (Views: 5.1ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:14:40 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"cgigchifgr", "id"=>"24", "comment"=>{"content"=>"cgigchifgr"}}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):3
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ (pry):3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):4
+  [1m[36mComment Create (4.6ms)[0m  [1m[32mINSERT INTO "comments" ("content", "story_id") VALUES ($1, $2) RETURNING "id"[0m  [["content", "cgigchifgr"], ["story_id", 24]]
+  ↳ (pry):4
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (pry):4
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."story_id" = $1[0m  [["story_id", 24]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:10
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 144062ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-13 10:18:23 -0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ryan/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 28ms (Views: 12.6ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/stories/24/comments" for 127.0.0.1 at 2020-02-13 10:18:41 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"content"=>"whatever", "id"=>"24", "comment"=>{"content"=>"whatever"}}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("content", "story_id") VALUES ($1, $2) RETURNING "id"[0m  [["content", "whatever"], ["story_id", 24]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:8
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 9.4ms)
+
+

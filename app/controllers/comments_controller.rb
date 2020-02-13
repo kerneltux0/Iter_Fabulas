@@ -3,10 +3,9 @@ class CommentsController < ApplicationController
   def create
     @story = Story.find(params[:id])
     @comment = Comment.new(comment_params)
-    if @comment.save
-      @story << @comment
-      @story.save
-    end
+    @story.comments << @comment
+    @comment.save
+    @story.save
     render json: {
       comment: @comment
     }
