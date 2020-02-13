@@ -14,6 +14,9 @@ class CommentInput extends Component {
   handleSubmit(event){
     event.preventDefault()
     this.props.addComment(this.props.storyId,this.state)
+    this.setState({
+      content:''
+    })
   }
 
   render() {
