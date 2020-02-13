@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 import CommentsContainer from '../containers/commentsContainer';
+import '../App.css'
 
 class Story extends Component {
 
@@ -9,7 +10,7 @@ class Story extends Component {
     const story = this.props.location.story
 
     return(
-      <div>
+      <div className="App">
         <button><Link to={'/stories'}>Story List</Link></button>
         <h1>{story.title}</h1>
         <h2>By: {story.name}</h2>
