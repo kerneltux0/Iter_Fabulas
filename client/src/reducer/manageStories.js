@@ -25,6 +25,8 @@ const manageStories = (state = {stories: [], comments: [], loading: false}, acti
         stories: [...state.stories,story],
         loading: false
       }
+    case 'CREATE_COMMENT':
+      console.log(action)
     case 'FETCH_STORIES':
       return{
         ...state,
