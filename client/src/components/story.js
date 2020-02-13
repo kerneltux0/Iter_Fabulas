@@ -12,10 +12,12 @@ class Story extends Component {
     return(
       <div className="App">
         <button><Link to={'/stories'}>Story List</Link></button>
-        <h1>{story.title}</h1>
-        <h2>By: {story.name}</h2>
-        <h4>{story.location}</h4>
-        <p>{story.content}</p>
+        <div className="story">
+          <h1>{story.title}</h1>
+          <h2>By: {story.name}</h2>
+          <h4>{story.location}</h4>
+          <p>{story.content}</p>
+        </div>
         <div>
           <CommentsContainer story={story}/>
         </div>
