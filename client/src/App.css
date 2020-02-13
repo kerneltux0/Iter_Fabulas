@@ -16,6 +16,18 @@ body {
   box-shadow: 10px 10px grey;
 }
 
+.story-list {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.story-form {
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 10px 10px grey;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
