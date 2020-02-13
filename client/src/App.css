@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+body {
+  background: #21D648;
+  background: -webkit-radial-gradient(center, #21D648, #AA8EE2);
+  background: -moz-radial-gradient(center, #21D648, #AA8EE2);
+  background: radial-gradient(ellipse at center, #21D648, #AA8EE2);
+}
+
+.iter-intro {
+  display: inline-block;
+  margin: 10px;
+  width: 800px;
+  box-shadow: 10px 10px grey;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
