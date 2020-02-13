@@ -31,6 +31,6 @@ export const addStory = (storyData) => {
   }
 }
 
-export const addComment = () => {
-  
+export const addComment = (id,comment) => {
+
 }
