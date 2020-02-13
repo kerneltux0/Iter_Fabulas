@@ -18,12 +18,24 @@ const manageStories = (state = {stories: [], comments: [], loading: false}, acti
         comments: [...state.comments],
         loading: true
       }
+    case 'LOADING_COMMENTS':
+      return{
+        ...state,
+        comments: [...state.comments],
+        loading:true
+      }
     case 'CREATE_STORY':
       let story = {id: action.story.id, title: action.story.title, location: action.story.location, name: action.story.name, content: action.story.content, likes: action.story.likes}
       return{
         ...state,
         stories: [...state.stories,story],
         loading: false
+      }
+    case 'FETCH_COMMENTS':
+      return{
+        ...state,
+        comments: action.comments,
+        loading:false
       }
     case 'CREATE_COMMENT':
       let comment = {id: action.comment.id, content: action.comment.content, storyId: action.comment.story_id}
