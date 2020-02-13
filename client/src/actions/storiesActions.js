@@ -54,5 +54,13 @@ export const addComment = (storyId,comment) => {
 }
 
 export const fetchComments = (storyId) => {
-  
+  return(dispatch) => {
+    dispatch({type: 'LOADING_COMMENTS'})
+    fetch(`http://localhost:3001/stories/${storyId}/comments`)
+    .then(response => {
+      return response.json()
+    }).then(responseJSON => {
+      console.log(responseJSON)
+    })
+  }
 }
