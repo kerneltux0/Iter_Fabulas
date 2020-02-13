@@ -47,7 +47,7 @@ export const addComment = (storyId,comment) => {
     .then(response => {
       return response.json()
     }).then(responseJSON => {
-      console.log(responseJSON)
+      dispatch({type: 'CREATE_COMMENT', comment: responseJSON.comment})
     })
   }
 
