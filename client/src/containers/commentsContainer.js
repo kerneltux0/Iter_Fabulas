@@ -16,10 +16,17 @@ class CommentsContainer extends Component {
   }
 }
 
+const mapStateToProps = (state) =>{
+  return{
+    comments: state.comments,
+    loading: state.loading
+  }
+}
+
 const mapDispatchToProps = (dispatch) => {
   return{
     addComment: (storyId,comment) => dispatch(addComment(storyId,comment))
   }
 }
 
-export default connect(null,mapDispatchToProps)(CommentsContainer);
+export default connect(mapStateToProps,mapDispatchToProps)(CommentsContainer);
