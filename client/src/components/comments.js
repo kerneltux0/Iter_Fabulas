@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Comment from './comment';
+import '../App.css'
 
 class Comments extends Component {
 
@@ -11,10 +12,12 @@ class Comments extends Component {
   render() {
     
     if(this.props.loading===true){
-      return(<h1>Loading...</h1>)
+      return(<div className="App">
+        <h1>Loading...</h1>
+      </div>)
     }else{
       return(
-        <div>
+        <div className="App">
           {this.props.comments.map(comment => {
             return(<Comment comment={comment} />)
           })}
