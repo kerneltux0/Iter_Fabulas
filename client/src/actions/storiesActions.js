@@ -52,3 +52,7 @@ export const addComment = (storyId,comment) => {
   }
 
 }
+
+export const fetchComments = (storyId) => {
+  
+}
