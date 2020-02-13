@@ -5,11 +5,17 @@ class CommentInput extends Component {
     content: ''
   }
 
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
   render() {
     return(
       <div>
         <form>
-          <textarea value='state.content' placeholder='Your comment' />
+          <textarea onChange={(event)=>this.handleChange(event)} name='content' rows={10} cols={30} value={this.state.content} placeholder='Your comment' /><br/>
           <input type='submit' value='Submit Comment' />
         </form>
       </div>
