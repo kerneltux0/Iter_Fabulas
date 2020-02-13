@@ -11,7 +11,7 @@ class Story extends Component {
 
     return(
       <div className="App">
-        <button><Link to={'/stories'}>Story List</Link></button>
+        <button><Link to={'/stories'}>Story List</Link></button><br/>
         <div className="story">
           <h1>{story.title}</h1>
           <h2>By: {story.name}</h2>
