@@ -18,9 +18,11 @@ class Comments extends Component {
     }else{
       return(
         <div className="App">
-          {this.props.comments.map(comment => {
-            return(<Comment comment={comment} />)
-          })}
+          <div className="comment-list">
+            {this.props.comments.map(comment => {
+              return(<Comment comment={comment} />)
+            })}
+          </div>
         </div>
       )
     }
