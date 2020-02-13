@@ -42,6 +42,10 @@ body {
   box-shadow: 10px 10px grey;
 }
 
+.comment {
+  box-shadow: 1px 1px black;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
