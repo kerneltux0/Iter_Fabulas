@@ -10,7 +10,7 @@ class CommentsContainer extends Component {
     return(
       <div>
         <Comments />
-        <CommentInput addComment={this.props.addComment} />
+        <CommentInput addComment={this.props.addComment} storyId={this.props.story.id}/>
       </div>
     )
   }
