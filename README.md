@@ -1,24 +1,23 @@
-# README
+# Iter Fabulas
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here you can read others' travel stories or post your own, as well as comment on stories.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Clone this repo, then run "bundle install" to load all of Rails' dependencies. Change into the 'client' directory & run 'npm install' to load all JavaScript dependencies.
 
-* System dependencies
+## Usage
 
-* Configuration
+After installation, run "rake start" in this project's root directory.  Then the landing page will open in your browser.
 
-* Database creation
+## Contributing
 
-* Database initialization
+Bug reports and pull requests are welcome on GitHub at https://github.com/kerneltux0/Iter_Fabulas. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-* How to run the test suite
+## Code of Conduct
 
-* Services (job queues, cache servers, search engines, etc.)
+Everyone interacting in the Podcast Interview Manager project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/kerneltux0/Iter_Fabulas/blob/master/code_of_conduct.md).
 
-* Deployment instructions
+## License
 
-* ...
+This is licensed under the GPL V3. You are free to use this code in your own project(s), in accordance to the GPL terms (located in license.txt).
