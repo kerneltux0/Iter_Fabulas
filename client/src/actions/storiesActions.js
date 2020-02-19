@@ -50,7 +50,7 @@ export const addComment = (storyId,comment) => {
       dispatch({type: 'CREATE_COMMENT', comment: responseJSON.comment})
     })
   }
-
+  
 }
 
 export const fetchComments = (storyId) => {
