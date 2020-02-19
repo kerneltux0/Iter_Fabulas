@@ -5,6 +5,23 @@ import '../App.css'
 
 
 class Stories extends Component {
+  state={
+    sorted: false
+  }
+
+// handleSort() {
+//   if(this.state.sorted===true){
+//     this.setState({
+//       sorted: false
+//     })
+//   }else{
+//     this.setState({
+//       sorted: true
+//     })
+//   }
+//   const sortingStories = this.props.stories
+//   sortingStories.sort(function)
+// }
 
   render(){
 
@@ -17,13 +34,17 @@ class Stories extends Component {
         <div className="App">
           <h1>Our List of Stories</h1>
           <div className="story-list">
+            <label>Sort Alphabetically</label>
+          {/* <input type='checkbox' onClick={()=>this.handleSort()} /> */}
             {this.props.stories.map(story => {
               return(
+                <p>
                 <Link to={{
                   pathname: `/stories/${story.id}`,
                   story: story
                 }}>{story.title}
                 </Link>
+                </p>
               )
             })}
           </div>
