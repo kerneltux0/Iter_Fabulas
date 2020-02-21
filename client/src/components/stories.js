@@ -26,9 +26,23 @@ handleSort() {
   return sortingStories
 }
 
-handleSearch(event) {
+handleChange(event) {
   this.setState({
     [event.target.name]: event.target.value
+  })
+}
+
+searchStories(term) {
+  const storySearch = [...this.props.stories]
+  
+}
+
+handleSearch(event) {
+  event.preventDefault()
+  this.searchStories(this.state.search)
+  this.setState({
+    sorted: this.state.sorted,
+    search: ''
   })
 }
 
@@ -57,7 +71,7 @@ updateSorted() {
           <h1>Our List of Stories</h1>
           <div className="story-list">
             <form onSubmit={(event)=>this.handleSearch(event)}>
-              <input type='text' name='search' value={this.state.search} placeholder='search' />
+              <input onChange={(event)=>this.handleChange(event)} type='text' name='search' value={this.state.search} placeholder='search' />
               <input type='submit' value='Search' />
             </form><br/>
             <label>Sort Alphabetically</label>
