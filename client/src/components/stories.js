@@ -6,7 +6,8 @@ import '../App.css'
 
 class Stories extends Component {
   state={
-    sorted: false
+    sorted: false,
+    search: ''
   }
 
 handleSort() {
@@ -25,7 +26,13 @@ handleSort() {
   return sortingStories
 }
 
-updateState() {
+handleSearch(event) {
+  this.setState({
+    [event.target.name]: event.target.value
+  })
+}
+
+updateSorted() {
   if(this.state.sorted===true){
     this.setState({
       sorted: false
@@ -49,8 +56,12 @@ updateState() {
         <div className="App">
           <h1>Our List of Stories</h1>
           <div className="story-list">
+            <form onSubmit={(event)=>this.handleSearch(event)}>
+              <input type='text' name='search' value={this.state.search} placeholder='search' />
+              <input type='submit' value='Search' />
+            </form><br/>
             <label>Sort Alphabetically</label>
-            <input type='checkbox' onClick={()=>this.updateState()} />
+            <input type='checkbox' onClick={()=>this.updateSorted()} />
             {stories.map(story => {
               return(
                 <p>
