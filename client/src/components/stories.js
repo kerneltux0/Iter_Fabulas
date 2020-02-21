@@ -34,8 +34,15 @@ handleChange(event) {
 
 searchStories(term) {
   const storySearch = [...this.props.stories]
-  return storySearch.filter(story => story.title === term)
-  // return storySearch
+
+  // return storySearch.filter(story =>{
+  //   const title = story.title.toLowerCase()
+  //   const entry = term.toLowerCase()
+  //   return title.includes(entry)
+  // })
+
+  // return storySearch.filter(story => story.title === term)
+  
 }
 
 handleSearch(event) {
