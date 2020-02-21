@@ -34,7 +34,8 @@ handleChange(event) {
 
 searchStories(term) {
   const storySearch = [...this.props.stories]
-  
+  storySearch.filter(story => story.title == term)
+  return storySearch
 }
 
 handleSearch(event) {
