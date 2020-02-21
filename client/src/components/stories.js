@@ -34,15 +34,14 @@ handleChange(event) {
 
 searchStories(term) {
   const storySearch = [...this.props.stories]
-  storySearch.filter(story => story.title == term)
-  return storySearch
+  return storySearch.filter(story => story.title === term)
+  // return storySearch
 }
 
 handleSearch(event) {
   event.preventDefault()
   this.searchStories(this.state.search)
   this.setState({
-    sorted: this.state.sorted,
     search: ''
   })
 }
@@ -60,7 +59,18 @@ updateSorted() {
 }
 
   render(){
-    let stories = (this.state.sorted===true) ? this.handleSort() : this.props.stories
+    const stories = (state) =>{
+      if(state.sorted===true){
+        return this.handleSort()
+      }
+      if(state.sorted===false){
+        return this.props.stories
+      }
+      if(state.search !== ''){
+        return this.searchStories(state.search)
+      }
+    }
+    // let stories = (this.state.sorted===true) ? this.handleSort() : this.props.stories
 
     if(this.props.loading === true){
       return(<div className="App">
@@ -77,7 +87,7 @@ updateSorted() {
             </form><br/>
             <label>Sort Alphabetically</label>
             <input type='checkbox' onClick={()=>this.updateSorted()} />
-            {stories.map(story => {
+            {stories(this.state).map(story => {
               return(
                 <p>
                 <Link to={{
