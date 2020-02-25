@@ -41,7 +41,6 @@ searchStories(term) {
     return title.includes(entry)
   })
 
-  console.log('storyFilter:',storyFilter)
   return storyFilter
   
 }
@@ -68,15 +67,16 @@ updateSorted() {
 
   render(){
     const stories = (state) =>{
+      if(state.search){
+        return this.searchStories(state.search)
+      }
       if(state.sorted===true){
         return this.handleSort()
       }
       if(state.sorted===false){
         return this.props.stories
       }
-      if(state.search){
-        return this.searchStories(state.search)
-      }
+      
     }
     // let stories = (this.state.sorted===true) ? this.handleSort() : this.props.stories
 
