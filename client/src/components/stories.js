@@ -42,13 +42,7 @@ searchStories(term) {
   })
 
   console.log('storyFilter:',storyFilter)
-
-  // console.log('copy of props.stories:',storySearch)
-  // console.log('state in searchStories:',this.state)
-  // console.log('passed-in term:',term)
-
-  // let searchFilter = storySearch.filter(story => story.title === term)
-  // console.log('search filter:',searchFilter)
+  return storyFilter
   
 }
 
@@ -80,7 +74,7 @@ updateSorted() {
       if(state.sorted===false){
         return this.props.stories
       }
-      if(state.search !== ''){
+      if(state.search){
         return this.searchStories(state.search)
       }
     }
