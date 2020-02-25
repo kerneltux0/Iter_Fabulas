@@ -45,13 +45,13 @@ searchStories(term) {
   
 }
 
-handleSearch(event) {
-  event.preventDefault()
-  this.searchStories(this.state.search)
-  this.setState({
-    search: ''
-  })
-}
+// handleSearch(event) {
+//   event.preventDefault()
+//   this.searchStories(this.state.search)
+//   this.setState({
+//     search: ''
+//   })
+// }
 
 updateSorted() {
   if(this.state.sorted===true){
@@ -89,10 +89,10 @@ updateSorted() {
         <div className="App">
           <h1>Our List of Stories</h1>
           <div className="story-list">
-            <form onSubmit={(event)=>this.handleSearch(event)}>
-              <input onChange={(event)=>this.handleChange(event)} type='text' name='search' value={this.state.search} placeholder='search' />
-              <input type='submit' value='Search' />
-            </form><br/>
+            {/* <form onSubmit={(event)=>this.handleSearch(event)}> */}
+            <input onChange={(event)=>this.handleChange(event)} type='text' name='search' value={this.state.search} placeholder='search' /><br/>
+              {/* <input type='submit' value='Search' /> */}
+            {/* </form><br/> */}
             <label>Sort Alphabetically</label>
             <input type='checkbox' onClick={()=>this.updateSorted()} />
             {stories(this.state).map(story => {
