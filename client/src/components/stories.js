@@ -35,7 +35,13 @@ handleChange(event) {
 searchStories(term) {
   const storySearch = [...this.props.stories]
 
-  
+  let storyFilter =  storySearch.filter(story =>{
+    const title = story.title.toLowerCase()
+    const entry = term.toLowerCase()
+    return title.includes(entry)
+  })
+
+  console.log('storyFilter:',storyFilter)
 
   // console.log('copy of props.stories:',storySearch)
   // console.log('state in searchStories:',this.state)
