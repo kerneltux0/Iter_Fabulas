@@ -10,19 +10,21 @@ class Stories extends Component {
     search: ''
   }
 
-handleSort() {
-  const sortingStories = [...this.props.stories]
-  sortingStories.sort(function(a,b){
-    let titleA = a.title.toUpperCase()
-    let titleB = b.title.toUpperCase()
-    if (titleA < titleB){
-      return -1
-    }
-    if (titleA > titleB){
-      return 1
-    }
-    return 0
-  })
+handleSort(stories) {
+  const sortingStories = [...stories]
+  if(this.state.sorted === true){
+    sortingStories.sort(function(a,b){
+      let titleA = a.title.toUpperCase()
+      let titleB = b.title.toUpperCase()
+      if (titleA < titleB){
+        return -1
+      }
+      if (titleA > titleB){
+        return 1
+      }
+      return 0
+    })
+  }
   return sortingStories
 }
 
@@ -66,18 +68,7 @@ updateSorted() {
 }
 
   render(){
-    const stories = (state) =>{
-      if(state.search){
-        return this.searchStories(state.search)
-      }
-      if(state.sorted===true){
-        return this.handleSort()
-      }
-      if(state.sorted===false){
-        return this.props.stories
-      }
-      
-    }
+    const stories = this.handleSort(this.searchStories(this.state.search))
     // let stories = (this.state.sorted===true) ? this.handleSort() : this.props.stories
 
     if(this.props.loading === true){
@@ -95,7 +86,7 @@ updateSorted() {
             {/* </form><br/> */}
             <label>Sort Alphabetically</label>
             <input type='checkbox' onClick={()=>this.updateSorted()} />
-            {stories(this.state).map(story => {
+            {stories.map(story => {
               return(
                 <p>
                 <Link to={{
