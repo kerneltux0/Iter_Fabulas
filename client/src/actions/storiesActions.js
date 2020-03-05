@@ -1,7 +1,7 @@
 export const fetchStories = () => {
   return(dispatch) => {
     dispatch({type: 'LOADING_STORIES'})
-    fetch('/')
+    fetch('/api/v1/')
     .then(response =>{
       console.log(response)
       return response.json()
@@ -24,7 +24,7 @@ export const addStory = (storyData) => {
 
   return(dispatch) => {
     dispatch({type: 'ADDING_STORY'})
-    fetch('/stories',config)
+    fetch('/api/v1/stories',config)
     .then(response =>{
       return response.json()
     }).then(responseJSON =>{
@@ -45,7 +45,7 @@ export const addComment = (storyId,comment) => {
 
   return(dispatch) => {
     dispatch({type: 'ADDING_COMMENT'})
-    fetch(`/stories/${storyId}/comments`,config)
+    fetch(`/api/v1/stories/${storyId}/comments`,config)
     .then(response => {
       return response.json()
     }).then(responseJSON => {
@@ -58,7 +58,7 @@ export const addComment = (storyId,comment) => {
 export const fetchComments = (storyId) => {
   return(dispatch) => {
     dispatch({type: 'LOADING_COMMENTS'})
-    fetch(`/stories/${storyId}/comments`)
+    fetch(`/api/v1/stories/${storyId}/comments`)
     .then(response => {
       return response.json()
     }).then(responseJSON => {
