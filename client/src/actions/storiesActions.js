@@ -3,6 +3,7 @@ export const fetchStories = () => {
     dispatch({type: 'LOADING_STORIES'})
     fetch('/api/v1/')
     .then(response =>{
+      console.log(response)
       return response.json()
     }).then(responseJSON => {
       console.log(responseJSON)
