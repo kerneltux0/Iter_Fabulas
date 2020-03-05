@@ -1,5 +1,24 @@
 {
   "name": "iter_fabulas",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "description": "Here you can read others' travel stories or post your own, as well as comment on stories.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerneltux0/Iter_Fabulas.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN license",
+  "bugs": {
+    "url": "https://github.com/kerneltux0/Iter_Fabulas/issues"
+  },
+  "homepage": "https://github.com/kerneltux0/Iter_Fabulas#readme"
 }
