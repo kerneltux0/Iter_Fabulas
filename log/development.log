@@ -7529,3 +7529,22 @@ Processing by Api::V1::StoriesController#index as */*
 Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/api/v1/" for 127.0.0.1 at 2020-03-05 13:25:24 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ryan/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::StoriesController#index as */*
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/api/v1/stories_controller.rb:6
+Completed 200 OK in 13ms (Views: 4.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/stories/1/comments" for 127.0.0.1 at 2020-03-05 13:25:26 -0700
+Processing by Api::V1::CommentsController#index as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:17
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:18
+Completed 200 OK in 16ms (Views: 5.2ms | ActiveRecord: 3.0ms)
+
+
