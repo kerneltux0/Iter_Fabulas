@@ -4,6 +4,9 @@
   "dependencies": {},
   "description": "Here you can read others' travel stories or post your own, as well as comment on stories.",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.10.0"
+  },
   "main": "index.js",
   "directories": {
     "lib": "lib"
