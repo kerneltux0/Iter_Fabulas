@@ -1,7 +1,7 @@
 export const fetchStories = () => {
   return(dispatch) => {
     dispatch({type: 'LOADING_STORIES'})
-    fetch('api/v1/')
+    fetch('https://localhost:3001/api/v1/')
     .then(response =>{
       console.log(response)
       return response.json()
